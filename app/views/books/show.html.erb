@@ -1,0 +1,9 @@
+<div class="box">
+<div class="flash"><%=   flash[:hoge]  %>
+<%=   flash[:hote]  %></div>
+<h4 class="dox">Title:<%= @book.title %></h4>
+<h4 class="dox">Body:<%= @book.body %></h4>
+
+	<td><%= link_to "Edit",edit_book_path(@book) %></td> 
+	<td><%= link_to "Back",books_path %></td>
+</div>
